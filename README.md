@@ -42,3 +42,7 @@ docker-compose -f sonarqube.yml
 ### Contributions to example sonarqube tool
 
 - [owenwilson](https://github.com/owenwilson)
+
+### Donations
+
+- [voluntary donations! devfrustrado](https://www.paypal.com/paypalme/devfrustrado)
