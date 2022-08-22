@@ -43,6 +43,4 @@ docker-compose -f sonarqube.yml
 
 - [owenwilson](https://github.com/owenwilson)
 
-### Donations
-
-- [voluntary donations! devfrustrado](https://www.paypal.com/paypalme/devfrustrado)
+### Thanks!
