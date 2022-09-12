@@ -2,7 +2,8 @@ version: "3"
 
 services:
   sonarqube:
-    #image: sonarqube:community
+    hostname: sonarqube
+    container_name: sonarqube
     image: sonarqube:latest
     #restart: always
     depends_on:
@@ -20,6 +21,8 @@ services:
     networks:
       - redqube
   db:
+    hostname: dbpsql
+    container_name: dbpsql
     image: postgres:13-alpine
     environment:
       POSTGRES_USER: sonar
