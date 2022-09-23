@@ -2,8 +2,10 @@ version: '3'
 
 services:
   dbtest:
+    hostname: postgres
+    container_name: postgres
     image: postgres:13-alpine
-    #restart: always
+    restart: always
     ports:
       - "5432:5432"
     environment:
@@ -15,7 +17,3 @@ services:
 
 networks:
   database-sonarqube:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 192.168.10.0/24
