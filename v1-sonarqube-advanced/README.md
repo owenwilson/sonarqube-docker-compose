@@ -45,8 +45,3 @@ docker-compose -f sonarqube.yml pull
 docker-compose -f sonarqube.yml
 ```
 
-### Contributions to example sonarqube tool
-
-- [owenwilson](https://github.com/owenwilson)
-
-### Thanks!
