@@ -1,0 +1,25 @@
+services:
+  sonarqube:
+    container_name: sonarqube
+    hostname: sonarqube
+    image: sonarqube:latest
+    ports:
+      - 9000:9000
+    volumes:
+      - sonarqube_data:/opt/sonarqube/data
+      - sonarqube_extensions:/opt/sonarqube/extensions
+      - sonarqube_logs:/opt/sonarqube/logs
+    networks:
+      - sonarnet
+
+volumes:
+  sonarqube_data:
+  sonarqube_extensions:
+  sonarqube_logs:
+
+networks:
+  sonarnet:
+    driver: bridge
+  jenkins:
+    external: true
+    name: jenkins
