@@ -42,6 +42,6 @@ docker-compose -f sonarqube.yml pull
 ```
 
 ```sh
-docker-compose -f sonarqube.yml
+docker-compose -f sonarqube.yml up -d
 ```
 
